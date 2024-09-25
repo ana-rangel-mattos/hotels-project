@@ -1,0 +1,154 @@
+.header {
+    width: calc(100% - 15px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+#light-theme .header {
+    background-color: #a4b4cb;
+}
+
+#dark-theme .header {
+    background-color: #262626;
+}
+
+.header .logo {
+    font-size: 40px;
+}
+
+.menu-bars {
+    font-size: 35px;
+}
+
+.nav-mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 65px;
+    width: 100%;
+}
+
+.nav-mobile ul li a {
+    text-decoration: none;
+    width: 100%;
+}
+
+#dark-theme .nav-mobile {
+    background-color: #262626;
+}
+
+#dark-theme .nav-mobile ul li a {
+    color: #F1F1F1;
+}
+
+#light-theme .nav-mobile {
+    background-color: #a4b4cb;
+}
+
+#light-theme .nav-mobile ul li a {
+    color: #333333;
+}
+
+.nav-mobile ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+.nav-mobile ul li {
+    padding: 10px;
+}
+
+.nav-mobile ul li:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+    display: none;
+}
+
+.toggle-theme {
+    width: 70px;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+}
+
+.toggle-theme:hover {
+    cursor: pointer;
+}
+
+#dark-theme .toggle-theme {
+    background-color: #F1F1F1;
+    color: #262626;
+}
+
+#dark-theme .toggle-theme:before {
+    content: "Light";
+}
+
+#light-theme .toggle-theme {
+    background-color: #4b4b4b;
+    color: #F1F1F1;
+}
+
+#light-theme .toggle-theme:before {
+    content: "Dark";
+}
+
+.nav ul li a {
+    text-decoration: none;
+}
+
+#dark-theme .nav ul li a {
+    color: #F1F1F1;
+}
+
+#light-theme .nav ul li a {
+    color: #333333;
+}
+
+@media screen and (min-width: 600px) {
+    .header .logo {
+        font-size: 60px;
+    }
+
+    .menu-bars {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+
+    .nav-mobile ul {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        width: 50%;
+    }
+
+    .nav ul {
+        display: flex;
+        width: 100%;
+        list-style-type: none;
+        justify-content: flex-end;
+    }
+
+    .nav ul li {
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    .nav ul li:hover {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}

@@ -1,0 +1,17 @@
+.star-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star-display {
+    font-size: 30px;
+}
+
+.star-display-yellow {
+    color: #ffc107;
+}
+
+.star-display-gray {
+    color: #e4e5e9;
+}

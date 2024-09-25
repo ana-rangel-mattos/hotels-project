@@ -1,0 +1,72 @@
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.form .container-form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.form .container-form input, button, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: clamp(16px, 2vw, 20px);
+}
+
+.form .container-form input::file-selector-button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+#dark-theme .form .container-form button,
+#dark-theme .form .container-form input[type="text"],
+#dark-theme .form .container-form input[type="number"],
+#dark-theme .form .container-form input::placeholder,
+#dark-theme .form .container-form textarea,
+#dark-theme .form .container-form textarea::placeholder,
+#dark-theme .form .container-form input::file-selector-button {
+    background-color: #3a3a5e;
+    color: #F1F1F1;
+}
+
+#light-theme .form .container-form button,
+#light-theme .form .container-form input[type="text"],
+#light-theme .form .container-form input[type="number"],
+#light-theme .form .container-form input::placeholder,
+#light-theme .form .container-form textarea,
+#light-theme .form .container-form textarea::placeholder,
+#light-theme .form .container-form input::file-selector-button {
+    background-color: #3b436e;
+    color: #F1F1F1;
+}
+
+.form .container-form button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.form .container-form label {
+    margin-top: 20px;
+    align-self: flex-start;
+}
+
+.error-message {
+    width: 100%;
+    color: #cc0033;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 10px;
+    margin-top: 2px;
+}

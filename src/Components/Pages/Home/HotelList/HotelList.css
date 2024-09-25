@@ -1,0 +1,84 @@
+.hotels {
+    width: calc(100% - 15px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-bar {
+    width: 80%;
+    max-width: 500px;
+}
+
+.search-bar input {
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+#dark-theme .search-bar input,
+#dark-theme .search-bar input::placeholder {
+    background-color: #3A3A5E;
+    color: #F1F1F1;
+}
+
+#light-theme .search-bar input,
+#light-theme .search-bar input::placeholder{
+    background-color: #3B436E;
+    color: #F1F1F1;
+}
+
+.filters {
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.filters .title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.filters #filterBy {
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+#dark-theme .filters #filterBy {
+    background-color: #3A3A5E;
+    color: #F1F1F1;
+}
+
+#light-theme .filters #filterBy {
+    background-color: #3B436E;
+    color: #F1F1F1;
+}
+
+.hotels .hotel-list {
+    list-style-type: none;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    .hotels .hotel-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

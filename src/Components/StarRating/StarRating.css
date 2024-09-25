@@ -1,0 +1,23 @@
+.star-container {
+    display: flex;
+}
+
+.star-container input[type="radio"] {
+    display: none;
+}
+
+.star {
+    font-size: 30px;
+}
+
+.star-yellow {
+    color: #ffc107;
+}
+
+.star-gray {
+    color: #e4e5e9;
+}
+
+.star-gray:hover {
+    color: rgba(217, 217, 217, 0.1);
+}

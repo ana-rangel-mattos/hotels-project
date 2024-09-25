@@ -1,0 +1,84 @@
+.hotel {
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#dark-theme .hotel {
+    background-color: #3a3a5e;
+}
+
+#light-theme .hotel {
+    background-color: #3b436e;
+    color: #F1F1F1;
+}
+
+.hotel > .image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.hotel .location {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hotel .buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.hotel .buttons .btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.hotel .buttons .btn .delete-btn {
+    color: #f44336;
+}
+
+.hotel .buttons .btn .edit-btn {
+    color: #5dcc18;
+}
+
+.hotel .buttons .btn .goto-btn {
+    color: dodgerblue;
+}
+
+.filled-favorite {
+    color: #E74D3D;
+}
+
+.filled-favorite:hover {
+    color: rgba(200, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.empty-favorite {
+    color: #031a2f;
+}
+
+.hotel .buttons .btn .delete-btn:hover {
+    color: rgba(255, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.hotel .buttons .btn .edit-btn:hover {
+    color: rgba(0, 255, 0, 0.6);
+    cursor: pointer;
+}
+
+.hotel .buttons .btn .goto-btn:hover {
+    color: rgba(5, 5, 255, 0.6);
+}
